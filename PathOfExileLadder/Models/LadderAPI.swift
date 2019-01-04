@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ian Bailey. All rights reserved.
 //
 
-import Foundation
 
+import UIKit
 struct LadderData: Codable {
     let entries: [POELadder]
 }
@@ -28,6 +28,9 @@ struct CharacterData: Codable{
     let name: String
     let level: Int
     let classString: String
+    var image: UIImage {
+        return UIImage.init(named: classString)!
+    }
 }
 struct AccountData: Codable {
     let name: String

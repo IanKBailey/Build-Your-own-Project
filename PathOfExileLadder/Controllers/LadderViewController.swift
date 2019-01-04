@@ -43,7 +43,15 @@ private func getLadder() {
         }
 
 
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = LadderTableView.indexPathForSelectedRow,
+        let ladderDetailView = segue.destination as?
+            LadderDetailViewController else {
+                fatalError("Whoopsie")
+        }
+        let ladder = ladderData[indexPath.row]
+         ladderDetailView.ladderInfo = ladder
+    }
     
     
     
