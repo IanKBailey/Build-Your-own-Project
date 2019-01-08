@@ -19,12 +19,11 @@ class LadderViewController: UIViewController {
             }
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
        getLadder()
         LadderTableView.dataSource = self
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
 
@@ -35,12 +34,10 @@ private func getLadder() {
             print(error.errorMessage())
         } else if let data = ladderData {
             self.ladderData = data
-            dump(ladderData)
-            dump(data)
-            }
-        }
             
         }
+    }
+}
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -52,13 +49,8 @@ private func getLadder() {
         let ladder = ladderData[indexPath.row]
          ladderDetailView.ladderInfo = ladder
     }
-    
-    
-    
-    
-    
-
 }
+
 extension LadderViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ladderData.count
@@ -66,8 +58,10 @@ extension LadderViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = LadderTableView.dequeueReusableCell(withIdentifier: "LadderCell", for: indexPath)
+            as! CustomCell
         let ladder = ladderData[indexPath.row]
-        cell.textLabel?.text = ladder.character.name
+        cell.rank?.text = "\(ladder.rank)"
+        cell.characterName?.text = ladder.character.name
         return cell
     }
 }

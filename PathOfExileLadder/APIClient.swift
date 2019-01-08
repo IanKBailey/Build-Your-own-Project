@@ -11,7 +11,7 @@ final class UserAPIClient {
 
     static func loadData(completionHandler: @escaping ((AppError?,[POELadder]?) -> Void)) {
         
- let url = "https://api.pathofexile.com/ladders/SSF+Betrayal+HC?offset=0&limit=20"
+ let url = "https://api.pathofexile.com/ladders/SSF+Betrayal+HC?offset=0&limit=100"
         NetworkHelper.performDataTask(urlString: url, httpMethod: "Get") { (error, data, response) in
             if let error = error {
                 completionHandler(error,nil)
@@ -23,17 +23,11 @@ final class UserAPIClient {
                         
                     } catch {
                         completionHandler(AppError.decodingError(error), nil)
+                }
+            }
         }
-    
-    
-    
-    
     }
-   
-    
-    }
-    }
-    }
+}
     
 
     

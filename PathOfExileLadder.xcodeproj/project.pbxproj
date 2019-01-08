@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		56AAA56521DEC89900A09187 /* LadderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAA56421DEC89900A09187 /* LadderDetailViewController.swift */; };
-		56AAA56921DEDCA400A09187 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAA56821DEDCA400A09187 /* CustomCellTableViewCell.swift */; };
+		56AAA56921DEDCA400A09187 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAA56821DEDCA400A09187 /* CustomCell.swift */; };
 		56C3E0C321CD624A0045A0AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3E0C221CD624A0045A0AD /* AppDelegate.swift */; };
 		56C3E0C521CD624A0045A0AD /* LadderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3E0C421CD624A0045A0AD /* LadderViewController.swift */; };
 		56C3E0C821CD624A0045A0AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C3E0C621CD624A0045A0AD /* Main.storyboard */; };
@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		56AAA56421DEC89900A09187 /* LadderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LadderDetailViewController.swift; sourceTree = "<group>"; };
-		56AAA56821DEDCA400A09187 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		56AAA56821DEDCA400A09187 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		56C3E0BF21CD624A0045A0AD /* PathOfExileLadder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathOfExileLadder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C3E0C221CD624A0045A0AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C3E0C421CD624A0045A0AD /* LadderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LadderViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			children = (
 				56C3E0C421CD624A0045A0AD /* LadderViewController.swift */,
 				56AAA56421DEC89900A09187 /* LadderDetailViewController.swift */,
-				56AAA56821DEDCA400A09187 /* CustomCellTableViewCell.swift */,
+				56AAA56821DEDCA400A09187 /* CustomCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 				56AAA56521DEC89900A09187 /* LadderDetailViewController.swift in Sources */,
 				56C3E0D521CD68A60045A0AD /* LadderAPI.swift in Sources */,
 				56C3E0D921D6D1BE0045A0AD /* AppError.swift in Sources */,
-				56AAA56921DEDCA400A09187 /* CustomCellTableViewCell.swift in Sources */,
+				56AAA56921DEDCA400A09187 /* CustomCell.swift in Sources */,
 				56C3E0C321CD624A0045A0AD /* AppDelegate.swift in Sources */,
 				56C3E0D721D6CFEF0045A0AD /* APIClient.swift in Sources */,
 				56C3E0DB21D6D1C30045A0AD /* ImageHelper.swift in Sources */,
