@@ -102,9 +102,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ARY-BO-eKz">
-                                <rect key="frame" x="68" y="72" width="239" height="71.5"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hw-GG-ksq">
                                 <rect key="frame" x="8" y="354.5" width="359" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -142,18 +139,21 @@
                                     <action selector="profileButton:" destination="7wo-Xq-HYN" eventType="touchUpInside" id="s38-zz-iFO"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ARY-BO-eKz">
+                                <rect key="frame" x="68" y="87" width="239" height="185"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5b8-zu-oWy" firstAttribute="top" secondItem="Oeg-Oi-jom" secondAttribute="bottom" constant="8" id="6tG-M7-4ix"/>
-                            <constraint firstItem="ARY-BO-eKz" firstAttribute="top" secondItem="zAy-tL-330" secondAttribute="top" constant="8" id="EgM-2a-IxK"/>
+                            <constraint firstItem="ARY-BO-eKz" firstAttribute="top" secondItem="zAy-tL-330" secondAttribute="top" constant="23" id="EgM-2a-IxK"/>
                             <constraint firstItem="zAy-tL-330" firstAttribute="bottom" secondItem="cnG-uU-Qri" secondAttribute="bottom" constant="109" id="HaO-Ek-H6h"/>
                             <constraint firstItem="cnG-uU-Qri" firstAttribute="leading" secondItem="zAy-tL-330" secondAttribute="leading" constant="109" id="HsL-CU-a59"/>
                             <constraint firstItem="zAy-tL-330" firstAttribute="trailing" secondItem="lco-WQ-No1" secondAttribute="trailing" constant="6" id="Ixc-kI-JqQ"/>
                             <constraint firstItem="Oeg-Oi-jom" firstAttribute="top" secondItem="IYJ-XY-NHJ" secondAttribute="bottom" constant="8.5" id="LCW-tq-2cf"/>
                             <constraint firstItem="7hw-GG-ksq" firstAttribute="leading" secondItem="zAy-tL-330" secondAttribute="leading" constant="8" id="M3L-li-xY9"/>
                             <constraint firstItem="IYJ-XY-NHJ" firstAttribute="leading" secondItem="zAy-tL-330" secondAttribute="leading" constant="10" id="N6E-UP-KyK"/>
-                            <constraint firstItem="7hw-GG-ksq" firstAttribute="top" secondItem="ARY-BO-eKz" secondAttribute="bottom" constant="211" id="OyZ-1A-dQt"/>
+                            <constraint firstItem="7hw-GG-ksq" firstAttribute="top" secondItem="ARY-BO-eKz" secondAttribute="bottom" constant="82.5" id="OyZ-1A-dQt"/>
                             <constraint firstItem="zAy-tL-330" firstAttribute="trailing" secondItem="ARY-BO-eKz" secondAttribute="trailing" constant="68" id="QMO-a2-aLd"/>
                             <constraint firstItem="cnG-uU-Qri" firstAttribute="top" secondItem="5b8-zu-oWy" secondAttribute="bottom" constant="37" id="T1D-nV-WYR"/>
                             <constraint firstItem="zAy-tL-330" firstAttribute="trailing" secondItem="IYJ-XY-NHJ" secondAttribute="trailing" constant="6" id="TIX-Gz-GOc"/>
